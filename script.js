@@ -13,6 +13,6 @@ function displayData()
             let formdata=new FormData(formelement);
             for(let key of formdata.keys()){
                 let a=localStorage.getItem(key);
-                x.innerHTML=x.innerHTML +" "+ key + " : "+ a;
+                x.innerHTML=x.innerHTML +" "+ key + " : "+ a+"<br>";
             }
         }
