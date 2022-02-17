@@ -11,10 +11,14 @@
     <p>Please fill out this form with the required information</p>
     <form action='' id="profileForm">
       <fieldset>
-        <label>Name: <input type="text" name="Name" placeholder="Enter your name" min-size="4" required /></label>
-        <label>Age: <input type="number" name="Age" placeholder="Enter your age" min="18" required /></label>
-        <label>Mobile Number<input type="number" name="Contact" placeholder="Enter your mobile number" size="10" required /></label>
-        <label>Address: <input type="text" name="Address" placeholder="Enter your address" maxlength="200" required /></label>
+        <label for="Name">Name:
+          <input type="text" name="Name" placeholder="Enter your name" minlength="4" required /></label>
+        <label for="age">Age:
+          <input name="age" type="number" min="18" required /></label>
+        <label for="Contact">Mobile Number<input type="tel" pattern="[0-9]{10}" name="Contact" placeholder="Enter your mobile number" maxlength="10"
+            required /></label>
+        <label>Address:
+          <input type="text" name="Address" placeholder="Enter your address" maxlength="200" required /></label>
       </fieldset>
       <fieldset>
         <label>Provide a bio:
